@@ -11,7 +11,7 @@ export default function LogoComponent() {
       {isMobileOrTablet ? (
         <div className={s.logo}>
 
-          <Link to="/" style={{ textDecoration: "none", color: "unset" }}>
+          <Link to="/" style={{display:"flex", alignItems:"center", textDecoration: "none", color: "unset" }}>
 
             <Logo /> <span className={s.logo__text}> Wallet</span>
           </Link>
@@ -19,7 +19,7 @@ export default function LogoComponent() {
       ) : (
         <div className={s.logo}>
 
-          <Link to="/" style={{ textDecoration: "none", color: "unset" }}>
+          <Link to="/" style={{display:"flex", alignItems:"center", textDecoration: "none", color: "unset" }}>
 
             <LogoMobile />
             <span className={s.logo__text}> Wallet</span>
